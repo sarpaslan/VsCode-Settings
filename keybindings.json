@@ -1,0 +1,99 @@
+[
+	{
+		"key": "ctrl+shift+a",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+shift+b",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "workbench.action.terminal.new",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "editor.action.moveCarretRightAction",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "runCommands",
+		"key": "alt+enter",
+		"when": "editorTextFocus",
+		"args": {
+			"commands": [
+				"workbench.action.toggleMaximizedPanel",
+				"workbench.action.terminal.focus"
+			]
+		}
+	},
+	{
+		"command": "runCommands",
+		"key": "alt+enter",
+		"when": "terminalFocus",
+		"args": {
+			"commands": [
+				"workbench.action.toggleMaximizedPanel",
+				"workbench.action.togglePanel",
+				"workbench.action.focusActiveEditorGroup"
+			]
+		}
+	},
+	{
+		"key": "ctrl+h",
+		"command": "editor.action.moveCarretLeftAction",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+x",
+		"command": "editor.action.marker.next",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+w",
+		"command": "workbench.action.terminal.kill",
+		"when": "terminalFocus"
+	},
+	// FILE TREE
+	{
+		"command": "workbench.action.toggleSidebarVisibility",
+		"key": "ctrl+e"
+	},
+	{
+		"key": "alt+t",
+		"command": "extension.toggleBool",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "workbench.files.action.focusFilesExplorer",
+		"key": "ctrl+e",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "n",
+		"command": "explorer.newFile",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "renameFile",
+		"key": "r",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "deleteFile",
+		"key": "d",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	// EXTRA
+	{
+		"key": "ctrl+shift+5",
+		"command": "editor.emmet.action.matchTag"
+	},
+	{
+		"key": "ctrl+z",
+		"command": "workbench.action.toggleZenMode"
+	}
+]

@@ -1,0 +1,417 @@
+{
+  "editor.suggest.insertMode": "insert",
+  "[c]": {
+    "editor.suggest.insertMode": "insert",
+  },
+  "[cpp]": {
+    "editor.suggest.insertMode": "insert",
+  },
+  "[css]": {
+    "editor.suggest.insertMode": "insert"
+  },
+  "terminal.integrated.fontFamily": "Iosevka Nerd Font",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "launch": {},
+  "[json]": {},
+  "editor.codeLens": true,
+  "update.showReleaseNotes": false,
+  "editor.cursorSurroundingLines": 5,
+  "editor.fontFamily": "Iosevka Nerd Font",
+  "terminal.integrated.fontSize": 14,
+  "editor.fontSize": 24,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.lineHeight": 1.15,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "relative",
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": false,
+  "editor.stickyScroll.enabled": true,
+  "breadcrumbs.enabled": true,
+  "editor.suggestFontSize": 14,
+  "editor.wordWrap": "off",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.settings.editor": "json",
+  "editor.cursorSmoothCaretAnimation": "off",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.fullScreen": true,
+  "zenMode.centerLayout": false,
+  "zenMode.hideStatusBar": false,
+  "csharp.semanticHighlighting.enabled": true,
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.camelCaseMotion.enable": false,
+  "vim.ignorecase": true,
+  "toggleboolean.mapping": {
+    "true": false,
+    "false": true,
+    "yes": "o",
+    "no": "yes",
+    "on": "off",
+    "off": "on",
+    "1": "0",
+    "0": "1"
+  },
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/CVS": false,
+    "**/.DS_Store": false,
+    "**/Thumbs.db": false,
+    ".vscode": false,
+    "**/*.csproj": false,
+    "**/*.sln": false,
+    "**/Packages/": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    }, // moveLineDown
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    }, // moveLin
+    // NAVIGATION
+    // switch b/w buffers
+    {
+      "before": [
+        "<S-h>"
+      ],
+      "commands": [
+        ":bprevious"
+      ]
+    },
+    {
+      "before": [
+        "<S-l>"
+      ],
+      "commands": [
+        ":bnext"
+      ]
+    },
+    // splits
+    {
+      "before": [
+        "leader",
+        "v"
+      ],
+      "commands": [
+        ":vsplit"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeEditorsInGroup"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "s"
+      ],
+      "commands": [
+        ":split"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.navigateBack"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "n"
+      ],
+      "commands": [
+        "workbench.action.navigateForward"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "g"
+      ],
+      "commands": [
+        "editor.action.goToDeclaration"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "r"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "i"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "u"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    // panes
+    {
+      "before": [
+        "leader",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.focusLeftGroup"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "j"
+      ],
+      "commands": [
+        "workbench.action.focusBelowGroup"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.focusAboveGroup"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.focusRightGroup"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prev"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.next"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "p"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "h"
+      ],
+      " commands": [
+        "editor.action.showDefinitionPreviewHover"
+      ]
+    },
+    {
+      "before": [
+        "<S-l>",
+      ],
+      "after": [
+        "i",
+        " ",
+        "<ESC>",
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "<S-h>",
+      ],
+      "after": [
+        "h",
+        "v",
+        "x",
+        "<ESC>",
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    // Move selected lines while staying in visual mode
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    },
+    // toggle comment selection
+    {
+      "before": [
+        "leader",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    }
+  ],
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "terminal.integrated.env.windows": {},
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.empty.hint": "hidden",
+  "apc.font.family": "Iosevka Nerd Font",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "window.titleBarStyle": "native",
+  "apc.menubar.compact": true,
+  "apc.header": {
+    "height": 20,
+    "fontSize": 14,
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  // "background.editorBackgrounds": [
+  //   "c:/Users/sharp/Pictures/ESO-VLT-Laser-phot-33a-07.jpg"
+  // ],
+  // "background.backgroundOpacity": [
+  //   0.9,
+  //   0.8,
+  //   0.9,
+  //   0.9
+  // ],
+  // "workbench.colorCustomizations": {
+  //   "activityBar.foreground": "#00FF00",
+  //   "[Kanagawa Black]": {
+  //     "activityBar.activeBackground": "#000000"
+  //   }
+  // },
+  "workbench.colorCustomizations": {
+    "[Tsoding Emacs Gruber Even Darker]": {
+      "editorBracketHighlight.foreground1": "#fefff4",
+      "editorBracketHighlight.foreground2": "#fefff4",
+      "editorBracketHighlight.foreground3": "#fefff4",
+      "editorBracketHighlight.foreground4": "#fefff4",
+    }
+  },
+  // "editor.tokenColorCustomizations": {
+  //   "numbers": "#ffa1a1",
+  //   "functions": "#eeeeee",
+  //   "variables": "#dcdcdc",
+  //   "strings": "#84c971",
+  //   "textMateRules": [
+  //     {
+  //       "scope": "entity.name.type.enum",
+  //       "settings": {
+  //         "foreground": "#9db1b9"
+  //       }
+  //     },
+  //     {
+  //       "scope": "variable.other.enummember",
+  //       "settings": {
+  //         "foreground": "#cacaca"
+  //       }
+  //     },
+  //     {
+  //       "scope": "variable.parameter",
+  //       "settings": {
+  //         "foreground": "#ff9900" // Add this line to customize parameter color
+  //       }
+  //     },
+  //   ]
+  // },
+  "workbench.activityBar.location": "hidden",
+  "workbench.sideBar.location": "right",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Tsoding Emacs Gruber Even Darker",
+  "git.enableSmartCommit": true
+}
