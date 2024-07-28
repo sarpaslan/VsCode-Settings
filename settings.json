@@ -14,6 +14,7 @@
   "launch": {},
   "[json]": {},
   "editor.codeLens": true,
+  "git.openRepositoryInParentFolders": "always",
   "update.showReleaseNotes": false,
   "editor.cursorSurroundingLines": 5,
   "editor.fontFamily": "Iosevka Nerd Font",
@@ -303,6 +304,15 @@
     // Stay in visual mode while indenting
     {
       "before": [
+        "g",
+        "s"
+      ],
+      "commands": [
+        "editor.action.moveSelectionToNextFindMatch"
+      ]
+    },
+    {
+      "before": [
         "<"
       ],
       "commands": [
@@ -412,6 +422,6 @@
   "workbench.sideBar.location": "right",
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Tsoding Emacs Gruber Even Darker",
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "workbench.colorTheme": "Tsoding Emacs Gruber Even Darker"
 }
