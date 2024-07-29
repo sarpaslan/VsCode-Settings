@@ -49,6 +49,16 @@
 		"command": "multiCommand.togglePanelAndSendSequence"
 	},
 	{
+		"key": "ctrl+n",
+		"when": "editorTextFocus",
+		"command": "workbench.action.navigateForward"
+	},
+	{
+		"key": "ctrl+b",
+		"when": "editorTextFocus",
+		"command": "workbench.action.navigateBack"
+	},
+	{
 		"command": "runCommands",
 		"key": "alt+enter",
 		"when": "terminalFocus",

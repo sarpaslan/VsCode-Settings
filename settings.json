@@ -99,25 +99,24 @@
       "commands": [
         "editor.action.moveLinesUpAction"
       ]
-    }, // moveLin
-    // NAVIGATION
+    },
     // switch b/w buffers
-    {
-      "before": [
-        "<S-h>"
-      ],
-      "commands": [
-        ":bprevious"
-      ]
-    },
-    {
-      "before": [
-        "<S-l>"
-      ],
-      "commands": [
-        ":bnext"
-      ]
-    },
+    // {
+    //   "before": [
+    //     "<S-h>"
+    //   ],
+    //   "commands": [
+    //     ":bprevious"
+    //   ]
+    // },
+    // {
+    //   "before": [
+    //     "<S-l>"
+    //   ],
+    //   "commands": [
+    //     ":bnext"
+    //   ]
+    // },
     // splits
     {
       "before": [
@@ -137,6 +136,7 @@
         "workbench.action.closeEditorsInGroup"
       ]
     },
+    //Reveals current file in explorer
     {
       "before": [
         "leader",
@@ -246,34 +246,35 @@
         "workbench.action.focusRightGroup"
       ]
     },
-    {
-      "before": [
-        "[",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.prev"
-      ]
-    },
-    {
-      "before": [
-        "]",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.next"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "c",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
-    },
+    // {
+    //   "before": [
+    //     "[",
+    //     "h"
+    //   ],
+    //   "commands": [
+    //     "editor.action.marker.prev"
+    //   ]
+    // },
+    // {
+    //   "before": [
+    //     "]",
+    //     "l"
+    //   ],
+    //   "commands": [
+    //     "editor.action.marker.next"
+    //   ]
+    // },
+    // <leader> u does the same thing not used
+    // {
+    //   "before": [
+    //     "<leader>",
+    //     "c",
+    //     "a"
+    //   ],
+    //   "commands": [
+    //     "editor.action.quickFix"
+    //   ]
+    // },
     {
       "before": [
         "leader",
@@ -290,15 +291,6 @@
       ],
       "commands": [
         "editor.action.formatDocument"
-      ]
-    },
-    {
-      "before": [
-        "g",
-        "h"
-      ],
-      " commands": [
-        "editor.action.showDefinitionPreviewHover"
       ]
     },
     {
