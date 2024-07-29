@@ -30,6 +30,7 @@
 		"when": "terminalFocus",
 		"args": {
 			"commands": [
+				"workbench.action.togglePanel",
 				"workbench.action.focusActiveEditorGroup",
 			]
 		}
@@ -46,7 +47,7 @@
 	},
 	{
 		"key": "ctrl+m",
-		"command": "multiCommand.togglePanelAndSendSequence"
+		"command": "multiCommand.cmdOpenFileDir"
 	},
 	{
 		"key": "ctrl+n",
