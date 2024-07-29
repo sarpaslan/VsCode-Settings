@@ -68,6 +68,21 @@
     "**/*.sln": false,
     "**/Packages/": false
   },
+  //needs extension called multi command -h
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.togglePanelAndSendSequence",
+      "sequence": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "for %i in (\"${file}\") do cd /d \"%~dpi\"\r"
+          }
+        }
+      ]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [

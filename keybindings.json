@@ -25,9 +25,14 @@
 		"when": "editorTextFocus"
 	},
 	{
+		"command": "runCommands",
 		"key": "ctrl+`",
-		"command": "workbench.action.focusActiveEditorGroup",
-		"when": "terminalFocus"
+		"when": "terminalFocus",
+		"args": {
+			"commands": [
+				"workbench.action.focusActiveEditorGroup",
+			]
+		}
 	},
 	{
 		"command": "runCommands",
@@ -41,10 +46,7 @@
 	},
 	{
 		"key": "ctrl+m",
-		"command": "workbench.action.terminal.sendSequence",
-		"args": {
-			"text": "for %i in (\"C:\\Users\\sharp\\AppData\\Roaming\\Code\\User\\keybindings.json\") do cd /d \"%~dpi\"\r"
-		}
+		"command": "multiCommand.togglePanelAndSendSequence"
 	},
 	{
 		"command": "runCommands",
@@ -110,5 +112,5 @@
 	{
 		"key": "ctrl+z",
 		"command": "workbench.action.toggleZenMode"
-	}
+	},
 ]
