@@ -20,14 +20,30 @@
 		"when": "editorTextFocus"
 	},
 	{
+		"key": "ctrl+`",
+		"command": "workbench.action.terminal.focus",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	},
+	{
 		"command": "runCommands",
 		"key": "alt+enter",
 		"when": "editorTextFocus",
 		"args": {
 			"commands": [
-				"workbench.action.toggleMaximizedPanel",
-				"workbench.action.terminal.focus"
+				"workbench.action.togglePanel",
 			]
+		}
+	},
+	{
+		"key": "ctrl+m",
+		"command": "workbench.action.terminal.sendSequence",
+		"args": {
+			"text": "for %i in (\"C:\\Users\\sharp\\AppData\\Roaming\\Code\\User\\keybindings.json\") do cd /d \"%~dpi\"\r"
 		}
 	},
 	{
@@ -36,7 +52,6 @@
 		"when": "terminalFocus",
 		"args": {
 			"commands": [
-				"workbench.action.toggleMaximizedPanel",
 				"workbench.action.togglePanel",
 				"workbench.action.focusActiveEditorGroup"
 			]

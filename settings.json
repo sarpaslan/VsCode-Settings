@@ -18,7 +18,7 @@
   "update.showReleaseNotes": false,
   "editor.cursorSurroundingLines": 5,
   "editor.fontFamily": "Iosevka Nerd Font",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 12,
   "editor.fontSize": 24,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
@@ -120,6 +120,15 @@
       ],
       "commands": [
         "workbench.action.closeEditorsInGroup"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "e"
+      ],
+      "commands": [
+        "revealFileInOS"
       ]
     },
     {
