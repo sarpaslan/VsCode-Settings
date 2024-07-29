@@ -45,8 +45,10 @@
 			]
 		}
 	},
+	//Opens current files directory
 	{
 		"key": "ctrl+m",
+		"when": "editorTextFocus",
 		"command": "multiCommand.cmdOpenFileDir"
 	},
 	{
