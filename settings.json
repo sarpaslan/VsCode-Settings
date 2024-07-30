@@ -18,15 +18,15 @@
   "update.showReleaseNotes": false,
   "editor.cursorSurroundingLines": 5,
   "editor.fontFamily": "Iosevka Nerd Font",
-  "terminal.integrated.fontSize": 12,
-  "editor.fontSize": 24,
+  "terminal.integrated.fontSize": 16,
+  "editor.fontSize": 26,
+  "editor.fontWeight": "400",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
-  "editor.lineHeight": 1.15,
+  "editor.lineHeight": 1,
   "editor.inlineSuggest.enabled": true,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
-  "editor.minimap.enabled": false,
   "editor.smoothScrolling": false,
   "editor.stickyScroll.enabled": true,
   "breadcrumbs.enabled": true,
@@ -34,6 +34,7 @@
   "editor.wordWrap": "off",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "editor.minimap.enabled": false,
   "workbench.settings.editor": "json",
   "editor.cursorSmoothCaretAnimation": "off",
   "zenMode.hideLineNumbers": false,
@@ -391,59 +392,36 @@
     "fontSize": 14,
   },
   "security.workspace.trust.untrustedFiles": "open",
-  // "background.editorBackgrounds": [
-  //   "c:/Users/sharp/Pictures/ESO-VLT-Laser-phot-33a-07.jpg"
-  // ],
-  // "background.backgroundOpacity": [
-  //   0.9,
-  //   0.8,
-  //   0.9,
-  //   0.9
-  // ],
-  // "workbench.colorCustomizations": {
-  //   "activityBar.foreground": "#00FF00",
-  //   "[Kanagawa Black]": {
-  //     "activityBar.activeBackground": "#000000"
-  //   }
-  // },
   "workbench.colorCustomizations": {
     "[Tsoding Emacs Gruber Even Darker]": {
       "editorBracketHighlight.foreground1": "#fefff4",
       "editorBracketHighlight.foreground2": "#fefff4",
       "editorBracketHighlight.foreground3": "#fefff4",
       "editorBracketHighlight.foreground4": "#fefff4",
+    },
+    "[Tsoding Emacs Gruber Minimal]": {
+      "editorBracketHighlight.foreground1": "#fefff4",
+      "editorBracketHighlight.foreground2": "#fefff4",
+      "editorBracketHighlight.foreground3": "#fefff4",
+      "editorBracketHighlight.foreground4": "#fefff4",
     }
   },
-  // "editor.tokenColorCustomizations": {
-  //   "numbers": "#ffa1a1",
-  //   "functions": "#eeeeee",
-  //   "variables": "#dcdcdc",
-  //   "strings": "#84c971",
-  //   "textMateRules": [
-  //     {
-  //       "scope": "entity.name.type.enum",
-  //       "settings": {
-  //         "foreground": "#9db1b9"
-  //       }
-  //     },
-  //     {
-  //       "scope": "variable.other.enummember",
-  //       "settings": {
-  //         "foreground": "#cacaca"
-  //       }
-  //     },
-  //     {
-  //       "scope": "variable.parameter",
-  //       "settings": {
-  //         "foreground": "#ff9900" // Add this line to customize parameter color
-  //       }
-  //     },
-  //   ]
-  // },
+  "editor.tokenColorCustomizations": {
+    "types": "#95a99f",
+    "functions": "#96a6c8",
+    "textMateRules": [
+      {
+        "scope": "entity.name.type.class",
+        "settings": {
+          "foreground": "#95a99f"
+        }
+      },
+    ]
+  },
   "workbench.activityBar.location": "hidden",
   "workbench.sideBar.location": "right",
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "workbench.startupEditor": "none",
   "git.enableSmartCommit": true,
-  "workbench.colorTheme": "Tsoding Emacs Gruber Even Darker"
+  "workbench.colorTheme": "Tsoding Emacs Gruber Minimal"
 }
