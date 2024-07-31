@@ -20,6 +20,16 @@
 		"when": "editorTextFocus"
 	},
 	{
+		"key": "ctrl+n",
+		"when": "editorTextFocus",
+		"command": "workbench.action.navigateForward"
+	},
+	{
+		"key": "ctrl+b",
+		"when": "editorTextFocus",
+		"command": "workbench.action.navigateBack"
+	},
+	{
 		"key": "ctrl+`",
 		"command": "workbench.action.terminal.focus",
 		"when": "editorTextFocus"
@@ -50,16 +60,6 @@
 		"key": "ctrl+m",
 		"when": "editorTextFocus",
 		"command": "multiCommand.cmdOpenFileDir"
-	},
-	{
-		"key": "ctrl+n",
-		"when": "editorTextFocus",
-		"command": "workbench.action.navigateForward"
-	},
-	{
-		"key": "ctrl+b",
-		"when": "editorTextFocus",
-		"command": "workbench.action.navigateBack"
 	},
 	{
 		"command": "runCommands",
