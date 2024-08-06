@@ -18,6 +18,7 @@
   "update.showReleaseNotes": false,
   "editor.cursorSurroundingLines": 5,
   "editor.fontFamily": "Iosevka Nerd Font",
+  "editor.padding.top": 10, // only needed for Iosevka font maybe there is a better solution without modifying the line height
   "terminal.integrated.fontSize": 16,
   "editor.fontSize": 26,
   "editor.fontWeight": "400",
@@ -29,7 +30,6 @@
   "editor.linkedEditing": true,
   "editor.smoothScrolling": false,
   "editor.stickyScroll.enabled": true,
-  "breadcrumbs.enabled": true,
   "editor.suggestFontSize": 14,
   "editor.wordWrap": "off",
   "explorer.confirmDelete": false,
@@ -72,28 +72,40 @@
     "**/*.sln": false,
     "**/Packages/": false
   },
-  //Needs extension called MultiCommand
-  "multiCommand.commands": [
-    {
-      "command": "multiCommand.cmdOpenFileDir",
-      "sequence": [
-        "workbench.action.terminal.focus",
-        {
-          "command": "workbench.action.terminal.sendSequence",
-          "args": {
-            "text": "for %i in (\"${file}\") do cd /d \"%~dpi\"\r"
-          }
-        },
-        {
-          "command": "workbench.action.terminal.sendSequence",
-          "args": {
-            "text": "clear \r"
-          }
-        }
-      ]
-    }
-  ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    { //delete to _ register 
+      "before": [
+        "leader",
+        "w"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "w"
+      ]
+    },
+    { //delete to _ register 
+      "before": [
+        "leader",
+        "c"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "c",
+        "w",
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "p"
+      ],
+      "commands": [
+        "editor.action.showDefinitionPreviewHover"
+      ]
+    },
     {
       "before": [
         "J"
@@ -110,24 +122,14 @@
         "editor.action.moveLinesUpAction"
       ]
     },
-    // switch b/w buffers
-    // {
-    //   "before": [
-    //     "<S-h>"
-    //   ],
-    //   "commands": [
-    //     ":bprevious"
-    //   ]
-    // },
-    // {
-    //   "before": [
-    //     "<S-l>"
-    //   ],
-    //   "commands": [
-    //     ":bnext"
-    //   ]
-    // },
-    // splits
+    {
+      "before": [
+        "<C-w>",
+      ],
+      "commands": [
+        ":s/[A-Z]",
+      ]
+    },
     {
       "before": [
         "leader",
@@ -274,17 +276,6 @@
     //     "editor.action.marker.next"
     //   ]
     // },
-    // <leader> u does the same thing not used
-    // {
-    //   "before": [
-    //     "<leader>",
-    //     "c",
-    //     "a"
-    //   ],
-    //   "commands": [
-    //     "editor.action.quickFix"
-    //   ]
-    // },
     {
       "before": [
         "leader",
@@ -292,15 +283,6 @@
       ],
       "commands": [
         "workbench.action.quickOpen"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "p"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
       ]
     },
     {
@@ -345,9 +327,75 @@
         "z"
       ]
     },
+    {
+      "before": [
+        "leader",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "d"
+      ]
+    },
+    { //delete to _ register 
+      "before": [
+        "leader",
+        "x"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "x"
+      ]
+    },
+  ],
+  "vim.insertModeKeyBindings": [ //insert mode paste 
+    {
+      "before": [
+        "<C-p>"
+      ],
+      "after": [
+        "<ESC>",
+        "p",
+        "b",
+      ]
+    }
   ],
   "vim.visualModeKeyBindings": [
-    // Stay in visual mode while indenting
+    { //select the text without new line character 
+      "before": [
+        "$"
+      ],
+      "after": [
+        "g",
+        "_",
+      ]
+    },
+    { //delete to _ register 
+      "before": [
+        "leader",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d"
+      ]
+    },
+    { //paste the selection but not copy the selection
+      "before": [
+        "leader",
+        "p"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "P"
+      ]
+    },
     {
       "before": [
         "g",
@@ -406,14 +454,11 @@
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.empty.hint": "hidden",
   "apc.font.family": "Iosevka Nerd Font",
+  "window.menuBarVisibility": "hidden",
+  "breadcrumbs.enabled": false,
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "window.titleBarStyle": "native",
-  "apc.menubar.compact": true,
-  "apc.header": {
-    "height": 20,
-    "fontSize": 14,
-  },
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.colorCustomizations": {
     "[Tsoding Emacs Gruber Even Darker]": {
@@ -441,7 +486,7 @@
       },
     ]
   },
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "default",
   "workbench.sideBar.location": "right",
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "workbench.startupEditor": "none",
