@@ -491,5 +491,11 @@
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "workbench.startupEditor": "none",
   "git.enableSmartCommit": true,
-  "workbench.colorTheme": "Tsoding Emacs Gruber Minimal"
+  "workbench.colorTheme": "Tsoding Emacs Gruber Minimal",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
