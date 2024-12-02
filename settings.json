@@ -6,6 +6,9 @@
   "[cpp]": {
     "editor.suggest.insertMode": "insert",
   },
+  "[html]": {
+    "editor.suggest.insertMode": "insert"
+  },
   "[css]": {
     "editor.suggest.insertMode": "insert"
   },
@@ -18,10 +21,9 @@
   "update.showReleaseNotes": false,
   "editor.cursorSurroundingLines": 5,
   "editor.fontFamily": "Iosevka Nerd Font",
-  "editor.padding.top": 10, // only needed for Iosevka font maybe there is a better solution without modifying the line height
   "terminal.integrated.fontSize": 16,
-  "editor.fontSize": 26,
-  "editor.fontWeight": "400",
+  "editor.fontSize": 19,
+  "editor.fontWeight": "450",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.lineHeight": 1,
@@ -39,7 +41,7 @@
   "editor.cursorSmoothCaretAnimation": "off",
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": true,
-  "zenMode.centerLayout": false,
+  "zenMode.centerLayout": true,
   "zenMode.hideStatusBar": false,
   "csharp.semanticHighlighting.enabled": true,
   "vim.leader": "<Space>",
@@ -49,16 +51,6 @@
   "vim.ignorecase": true,
   "vim.handleKeys": {
     "": false
-  },
-  "toggleboolean.mapping": {
-    "true": false,
-    "false": true,
-    "yes": "o",
-    "no": "yes",
-    "on": "off",
-    "off": "on",
-    "1": "0",
-    "0": "1"
   },
   "files.exclude": {
     "**/.git": false,
@@ -73,7 +65,7 @@
     "**/Packages/": false
   },
   "vim.normalModeKeyBindingsNonRecursive": [
-    { //delete to _ register 
+    {
       "before": [
         "leader",
         "w"
@@ -85,7 +77,7 @@
         "w"
       ]
     },
-    { //delete to _ register 
+    {
       "before": [
         "leader",
         "c"
@@ -104,30 +96,6 @@
       ],
       "commands": [
         "editor.action.showDefinitionPreviewHover"
-      ]
-    },
-    {
-      "before": [
-        "J"
-      ],
-      "commands": [
-        "editor.action.moveLinesDownAction"
-      ]
-    }, // moveLineDown
-    {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "editor.action.moveLinesUpAction"
-      ]
-    },
-    {
-      "before": [
-        "<C-w>",
-      ],
-      "commands": [
-        ":s/[A-Z]",
       ]
     },
     {
@@ -167,24 +135,24 @@
         ":split"
       ]
     },
-    {
-      "before": [
-        "leader",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.navigateBack"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "n"
-      ],
-      "commands": [
-        "workbench.action.navigateForward"
-      ]
-    },
+    // {
+    //   "before": [
+    //     "leader",
+    //     "b"
+    //   ],
+    //   "commands": [
+    //     "workbench.action.navigateBack"
+    //   ]
+    // },
+    // {
+    //   "before": [
+    //     "leader",
+    //     "n"
+    //   ],
+    //   "commands": [
+    //     "workbench.action.navigateForward"
+    //   ]
+    // },
     {
       "before": [
         "leader",
@@ -258,24 +226,6 @@
         "workbench.action.focusRightGroup"
       ]
     },
-    // {
-    //   "before": [
-    //     "[",
-    //     "h"
-    //   ],
-    //   "commands": [
-    //     "editor.action.marker.prev"
-    //   ]
-    // },
-    // {
-    //   "before": [
-    //     "]",
-    //     "l"
-    //   ],
-    //   "commands": [
-    //     "editor.action.marker.next"
-    //   ]
-    // },
     {
       "before": [
         "leader",
@@ -287,29 +237,7 @@
     },
     {
       "before": [
-        "<S-l>",
-      ],
-      "after": [
-        "i",
-        " ",
-        "<ESC>",
-        "l"
-      ]
-    },
-    {
-      "before": [
-        "<S-h>",
-      ],
-      "after": [
-        "h",
-        "v",
-        "x",
-        "<ESC>",
-      ]
-    },
-    {
-      "before": [
-        "<C-d>",
+        "<C-j>",
       ],
       "after": [
         "<C-d>",
@@ -319,7 +247,23 @@
     },
     {
       "before": [
-        "<C-u>",
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    }, // moveLineDown
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>",
       ],
       "after": [
         "<C-u>",
@@ -351,7 +295,7 @@
       ]
     },
   ],
-  "vim.insertModeKeyBindings": [ //insert mode paste 
+  "vim.insertModeKeyBindings": [
     {
       "before": [
         "<C-p>"
@@ -364,7 +308,7 @@
     }
   ],
   "vim.visualModeKeyBindings": [
-    { //select the text without new line character 
+    {
       "before": [
         "$"
       ],
@@ -373,7 +317,7 @@
         "_",
       ]
     },
-    { //delete to _ register 
+    {
       "before": [
         "leader",
         "d"
@@ -384,7 +328,7 @@
         "d"
       ]
     },
-    { //paste the selection but not copy the selection
+    {
       "before": [
         "leader",
         "p"
@@ -421,24 +365,6 @@
         "editor.action.indentLines"
       ]
     },
-    // Move selected lines while staying in visual mode
-    {
-      "before": [
-        "J"
-      ],
-      "commands": [
-        "editor.action.moveLinesDownAction"
-      ]
-    },
-    {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "editor.action.moveLinesUpAction"
-      ]
-    },
-    // toggle comment selection
     {
       "before": [
         "leader",
@@ -474,28 +400,18 @@
       "editorBracketHighlight.foreground4": "#fefff4",
     }
   },
-  "editor.tokenColorCustomizations": {
-    "types": "#95a99f",
-    "functions": "#96a6c8",
-    "textMateRules": [
-      {
-        "scope": "entity.name.type.class",
-        "settings": {
-          "foreground": "#95a99f"
-        }
-      },
-    ]
-  },
-  "workbench.activityBar.location": "default",
+  "workbench.activityBar.location": "hidden",
   "workbench.sideBar.location": "right",
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "workbench.startupEditor": "none",
   "git.enableSmartCommit": true,
-  "workbench.colorTheme": "Default High Contrast",
+  "workbench.colorTheme": "Tsoding Emacs Gruber Even Darker",
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false
-  }
+  },
+  "workbench.panel.showLabels": false,
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }

@@ -34,6 +34,11 @@
 		"command": "workbench.action.terminal.focus",
 		"when": "editorTextFocus"
 	},
+	{ //show next error
+		"key": "ctrl+x",
+		"command": "editor.action.marker.next",
+		"when": "editorTextFocus"
+	},
 	{
 		"command": "runCommands",
 		"key": "ctrl+`",
@@ -55,12 +60,6 @@
 			]
 		}
 	},
-	//Opens current files directory
-	{
-		"key": "ctrl+m",
-		"when": "editorTextFocus",
-		"command": "multiCommand.cmdOpenFileDir"
-	},
 	{
 		"command": "runCommands",
 		"key": "alt+enter",
@@ -78,24 +77,13 @@
 		"when": "editorTextFocus"
 	},
 	{
-		"key": "ctrl+x",
-		"command": "editor.action.marker.next",
-		"when": "editorTextFocus"
-	},
-	{
 		"key": "ctrl+shift+w",
 		"command": "workbench.action.terminal.kill",
 		"when": "terminalFocus"
 	},
-	// FILE TREE
 	{
 		"command": "workbench.action.toggleSidebarVisibility",
 		"key": "ctrl+e"
-	},
-	{
-		"key": "alt+t",
-		"command": "extension.toggleBool",
-		"when": "editorTextFocus"
 	},
 	{
 		"command": "workbench.files.action.focusFilesExplorer",
@@ -116,11 +104,6 @@
 		"command": "deleteFile",
 		"key": "d",
 		"when": "filesExplorerFocus && !inputFocus"
-	},
-	// EXTRA
-	{
-		"key": "ctrl+shift+5",
-		"command": "editor.emmet.action.matchTag"
 	},
 	{
 		"key": "ctrl+z",
